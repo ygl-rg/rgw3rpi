@@ -187,8 +187,8 @@ class EmLogin(AppLoginBase):
 
     def GetAppOptions(self):
         return {
-            "en": [{'label': "Environment Control", "value": "em"},
-                   {'label': 'Environment Data', "value": "em_sensor"}],
+            "en": [{'label': "Control/控制", "value": "em"},
+                   {'label': 'Data/数据', "value": "em_sensor"}],
 
             "zh-cn": [{'label': "环境控制", "value": "em"},
                       {'label': "环境数据", "value": "em_sensor"}],

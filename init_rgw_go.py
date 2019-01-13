@@ -12,7 +12,7 @@ def SetPassword(connid):
 def SetPagekite(connid):
     pk_path = "/home/pi/pagekite.py"
     connid.execute("insert into rgw_sys_cfg(key,val) values(?,?)", ("pagekite_path", pk_path))
-    connid.execute("insert into rgw_sys_cfg(key,val) values(?,?)", ("pagekite_frontend", "esis.dyndns.ws:443"))
+    connid.execute("insert into rgw_sys_cfg(key,val) values(?,?)", ("pagekite_frontend", "esis.vip:80"))
 
 
 def SetEmailSender(connid):
