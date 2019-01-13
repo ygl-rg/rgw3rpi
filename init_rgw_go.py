@@ -34,6 +34,7 @@ def main(db_path):
         conn.conn_obj.execute(rg_lib.Sqlite.CreateTable(node_models.SysCfg.TBL, node_models.SysCfg.TBL_FIELDS))
         SetPagekite(conn.conn_obj)
         SetEmailSender(conn.conn_obj)
+        SetRXG(conn.conn_obj)
         new_pwd = SetPassword(conn.conn_obj)
         print('password is {0}'.format(new_pwd))
 
